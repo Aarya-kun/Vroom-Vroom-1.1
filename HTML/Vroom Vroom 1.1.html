@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vroom Vroom</title>
+    <!-- Connect your CSS styling file -->
+    <link rel="stylesheet" href="../CSS/Menu.css">
+</head>
+<body>
+    <div id="speedo" style="position:fixed;bottom:20px;right:20px;padding:12px 20px;background:rgba(0,0,0,0.6);color:white;font:bold 36px sans-serif;border-radius:10px;">
+    0 <span style="font-size:16px;">km/h</span>
+    </div>  
+    <div id="msg" style="position:fixed;top:20px;width:100%;text-align:center;font:bold 32px sans-serif;color:white;text-shadow:2px 2px 4px black;display:none;">You fell off!</div>
+    <div id = "pauseMsg" style = "display:none;">
+        PAUSED
+        <div class="pause-sub">PRESS P TO RESUME</div>
+    </div>
+        
+    <div id = "menu">
+        <div class="menu-content">
+            <h1>Vroom <span> Vroom</span></h1>
+            <p class = "tagline">Drive fast. Don't fall off!</p>
+
+            <button id="playBtn">Start Game</button>
+            <button id="controlsBtn">Controls</button>
+            <button id ="creditsBtn">Credits</button>
+
+            <div id="controlsPanel">
+                <h2>Controls</h2>
+                <p>Up Arrow / W: Accelerate</p>
+                <p>Down Arrow / S: Brake/Reverse</p>
+                <p>Left Arrow / A: Turn Left</p>
+                <p>Right Arrow / D: Turn Right</p>
+                <p>R: Reset Car</p>
+                <p>P: Pause Game</p>
+                <p>Space bar: Drift</p>
+                <p>Escape: Menu</p>
+            </div>
+
+            <div id ="credits">
+                <h2>Credits</h2>
+                <p>Game developed by Aarya</p>
+                <p>Powered by Three.js and Cannon.js</p>
+            </div>
+            <p class="hint">Press ENTER to start</p>
+        </div>
+    </div>  
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js"></script>
+    
+    <script src="../JS/game.js"></script>
+    <script src="../JS/map.js"></script>
+    <script src="../JS/map2.js"></script>
+    <script src="../JS/Graphics.js"></script>
+    <script src="../JS/Wheels.js"></script>
+    <script src="../JS/Slopes.js"></script>
+    <script src="../JS/Customise_Car.js"></script>
+</body>
+</html>
+
